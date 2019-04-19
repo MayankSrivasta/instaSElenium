@@ -49,13 +49,13 @@ public class instaMain {
 		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='username' and @type='text']")));
 		//elm=driver.findElementByXPath("//input[@name='username' and @type='text']");
 		//highLight(driver,elm);
-		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("pal5130@gmail.com");
-		//driver.findElement(By.name("username")).sendKeys("pal5130@gmail.com");
-		driver.findElement(By.name("password")).sendKeys("jaanmurkolijane"); //jaanmurkolija
+		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("USERNAME");
+		//driver.findElement(By.name("username")).sendKeys("USERNAME");
+		driver.findElement(By.name("password")).sendKeys("PASSWORD"); //
 		driver.findElementByXPath("//*[contains(text(), 'Log In')]").click(); //login button
 		//driver.findElement(By.partialLinkText("Log In")).click();
 		Thread.sleep(5000);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("pallab_kr_mali")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("PROFILEID")));
 		driver.findElement(By.xpath("//button[@class='aOOlW   HoLwm ']")).click(); //desktop notification not now
 		//getProfileId(driver,wait);
 		//Login complete here
